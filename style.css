@@ -1,0 +1,8 @@
+#barra, #cuadro {
+
+    justify-content: center;
+    align-self: flex-start;
+    align-items: baseline;
+    align-content: flex-start;
+    background-color: rgb(191, 166, 219);
+}
