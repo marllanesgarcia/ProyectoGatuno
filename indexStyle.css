@@ -20,3 +20,7 @@ body{
     width:70%;
     height:15vh;
 }
+
+#cuadro{
+    background-color: rgba(250, 235, 215, 0.568);
+}
