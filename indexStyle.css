@@ -1,0 +1,17 @@
+#barra, #cuadro {
+
+    justify-content: center;
+    align-self: flex-start;
+    align-items: baseline;
+    align-content: flex-start;
+    background-color: rgba(191, 166, 219, 0.575);
+}
+
+body{
+    background-image: url(cat5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+}
