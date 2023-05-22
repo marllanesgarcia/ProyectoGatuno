@@ -77,6 +77,11 @@ body {
     background-color: #fff;
     color: #8e44ad;
   }
+
+
+  #email{
+
+  }
   
   #cuadro {
     margin-left: 30px; /* Ajusta el valor según tu preferencia */
@@ -84,6 +89,7 @@ body {
     padding: 20px;
     background-color: #ffffff5e;
     color: #000;
+    justify-content: flex-start;
   }
   
   /* */
