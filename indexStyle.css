@@ -1,25 +1,29 @@
-
-body{
+body {
     background-image: url(cat5.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: #999;
-}
-
-.container {
-    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    position: fixed;
+    top: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    z-index: 1;
   }
   
   .logo {
-    position:-webkit-sticky;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     right: 0;
-    z-index: 1;
   }
   
   .menu {
@@ -50,5 +54,12 @@ body{
   .menu a:hover {
     background-color: #fff;
     color: #8e44ad;
+  }
+  
+  #cuadro {
+    margin-left: 30px; /* Ajusta el valor según tu preferencia */
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
   }
   
