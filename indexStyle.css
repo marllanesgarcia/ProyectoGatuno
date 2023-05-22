@@ -1,4 +1,4 @@
-#barra {
+#barra, #cuadro {
 
     justify-content: center;
     align-self: flex-start;
@@ -15,12 +15,50 @@ body{
     background-size: cover;
     background-color: #999;
 }
-
-#titulo{
-    width:70%;
-    height:15vh;
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
 }
 
-#cuadro{
-    background-color: rgba(250, 235, 215, 0.568);
+.logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
+
+.menu {
+  background-color: #8e44ad;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 50px; 
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #8e44ad;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: #8e44ad;
+}
+
+  
