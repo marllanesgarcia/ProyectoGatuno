@@ -3,26 +3,26 @@
 	<xsl:template match="/">
 		<html>
 			<head>
-				<link rel="stylesheet" type="text/css" href="cancion.css" />
+				<link rel="stylesheet" type="text/css" href="estilosxml.css" />
 			</head>
 			<body>
 				<h1>
 					<span>
-					informacion de la cancion
+					informacion sobre los gatos
 					</span>
 				</h1>
 				<h2>
-					<xsl:value-of select="cancion/titulo"/>
+					<xsl:value-of select="gato/titulo"/>
 				</h2>
 				<h2>
 					
-					<xsl:value-of select="cancion/autor"/>
+					<xsl:value-of select="gato/autor"/>
 				</h2>
 
-          <xsl:for-each select="cancion/letras/estrofaa"> 
-					<div class="estrofaa">
-							     <xsl:for-each select="verso">
-						          <p class="verso">
+          <xsl:for-each select="gato/apartado/linea"> 
+					<div class="apartado">
+							     <xsl:for-each select="linea">
+						          <p class="linea">
      						    <xsl:value-of select="."/>
 						          </p>
 						  	    </xsl:for-each>  

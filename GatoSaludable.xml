@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="GatoXSL.xsl"?> 
 <gato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gato.xsd">
 	<titulo>Cuidados para un gato saludable</titulo>
-	<autor>Monia & Mar</autor>
+	<autor>Monia y Mar</autor>
 	<main>
 			<linea>Los gatos suelen ser mascotas exigentes que precisan de 
 			ciertas rutinas de cuidado para mantenerse saludables al 100%.
