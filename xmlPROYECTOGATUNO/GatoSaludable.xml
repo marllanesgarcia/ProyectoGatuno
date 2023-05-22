@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="GatoXSL.xsl"?> 
+<gato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gato.xsd">
+	<titulo>Cuidados para un gato saludable</titulo>
+	<autor>Monia & Mar</autor>
+	<main>
+			<linea>Los gatos suelen ser mascotas exigentes que precisan de 
+			ciertas rutinas de cuidado para mantenerse saludables al 100%.
+			Pese a que en sus hábitos diarios ya incorporan el acicalamiento 
+			personal como medida de higiene, hay otra serie de aspectos que 
+			debes tener en cuenta que para que se sientan felices y cuidados. </linea>
+		
+		<apartado>
+			<linea> 1. Alimentación</linea>
+			<linea>Siempre de calidad y adaptada a sus etapas de vida. Los gatitos tienen necesidades 
+			nutricionales distintas a las de los gatos adultos, centradas en fomentar su correcto desarrollo 
+			y crecimiento, y además el número de sus tomas diarias suele ser más frecuente. 
+			A partir del año, el gato se considera adulto, y suele necesitar alimentos menos 
+			calóricos para evitar el posible sobrepeso, u otras variedades de producto que respondan a un nuevo estadio </linea>
+			<linea> 2. Agua</linea>	
+			<linea> Limpia, en abundancia e idealmente servida en bebederos de acero inoxidable 
+			o aluminio. En verano, ubica varios bebederos de estas características en distintos 
+			lugares de tu casa, para que tu gato siempre tenga agua a mano si quiere beber. </linea>			
+		</apartado>
+		<apartado>
+			<lineat> 3. Mantenimiento óptimo del arenero </linea>
+			<linea> Adquiere un arenero que se adapte bien a sus dimensiones, sobre todo cuando 
+			tu gato ya haya alcanzado su etapa adulta. Colócalo en un lugar tranquilo, 
+			alejado de la zona de alimentación, bebida y relax. Con ayuda de una pala 
+			retira sus deposiciones diarias, y cambia la arena con una frecuencia semanal.</linea>
+			<linea> 4. Uñas y patas</linea>
+			<linea>Acostúmbralo a limarse las uñas en un rascador desde que es gatito. 
+			Ésta es la mejor solución para que no recurra a hacerlo en sofás, cortinas y muebles. 
+			Añade a este aspecto la rutina del corte de uñas. Ciertamente, puede ser una labor compleja 
+			y estresante para tu gato y para ti, pero en tiendas especializadas en mascotas 
+			puedes adquirir tijeras seguras que impedirán que puedas dañar alguno de sus nervios. 
+			Si te ves muy apurado, aprovecha una de las visitas al veterinario para que 
+			te explique cómo llevar a cabo el corte de uñas en las condiciones más favorables para ambos</linea>
+			<linea> 5. Ejercitarlo mediante el juego</linea>
+			<linea>No es necesario que le compres un super parque de juego. Con imaginación y algunos 
+			remedios caseros, puedes construirle elementos que lo incentiven a jugar e interactuar contigo, 
+			tales como pelotas de trapo, cajas de cartón con distintos niveles, o premiarle con juguetes tipo 
+			ratitas que despertarán sus instintos naturales de caza.</linea>			
+		</apartado>
+		<apartado>
+			<linea> 6. El cepillado </linea>
+			<linea>Totalmente imprescindible si tienes un gato con pelo semilargo o largo. 
+			Busca aquel momento en el que lo intuyas más tranquilo y predispuesto al contacto contigo, 
+			y aprovecha para convertir la rutina del cepillado en una tarea habitual.
+			En tiendas especializadas en mascotas puedes encontrar la mejor opción de cepillo para cubrir las 
+			características de tu gato, teniendo en cuenta que la finalidad es eliminar el exceso de pelo 
+			muerto y la consecuente formación de nudos o bolas de pelo en el estómago. </linea>		
+			<linea> 7. Visitas periódicas al veterinario</linea>
+			<linea> No olvides que los gatos, como ocurre con los perros, también necesitan tener 
+			su cartilla de vacunas en regla y pasar por los procesos de desparasitación (interna y externa). 
+			Los veterinarios suelen aprovechar estas visitas para realizarle una exploración completa a tu gato, 
+			inspeccionando sus oídos, estado de sus dientes, aparición de posibles masas, estado de la piel, pelo y ojos. 
+			Este aspecto, de carácter preventivo, ayudará a que tu gato goce de una salud extraordinaria, 
+			y te confirmará que está excelentemente bien cuidado. </linea>
+
+		</apartado>
+	</main>
+</gato>
