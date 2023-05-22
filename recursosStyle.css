@@ -6,3 +6,12 @@ body{
     background-size: cover;
     background-color: #999;
 }
+
+#barra {
+
+    justify-content: center;
+    align-self: flex-start;
+    align-items: baseline;
+    align-content: flex-start;
+    background-color: rgba(191, 166, 219, 0.575);
+}
