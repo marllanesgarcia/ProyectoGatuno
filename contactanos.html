@@ -63,7 +63,6 @@
 
         &nbsp;
         &nbsp;
-        <form method='POST'>
           <div class="form-group">
             <label for="nombre">Nombre: </label> </br>
             <input type="text" class="form-control" name='nombre' id="nombre" placeholder="nombre...">
@@ -79,9 +78,15 @@
           <div class="form-group">
             <input type="checkbox" required> Acepto la política de privacidad.
           </div>
-          <button class="btn btn-primary" type="submit" onclick="alert('ENVIADO!!');">Enviar</button>
-        </form>
+          <input type="button" value="Enviar" onclick="sendMail(); return false">
+
+          <label>Asunto:</label><br>
+          <input id="subject" type="text"><br><br>
+          <label>Comentario:</label><br>
+          <textarea id="comment"></textarea><br><br>
+          
 
 
+          <script src="./javascript.js"></script>
 </body>
 </html>
