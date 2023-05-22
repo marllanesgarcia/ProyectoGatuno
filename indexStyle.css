@@ -26,15 +26,31 @@ body{
     padding: 0;
   }
   
+  /* Estilos del contenedor */
+  .container {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  /* Estilos del logo */
+  .logo {
+    margin-right: 20px;
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
+  
   /* Estilos del menú */
   .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
     background-color: #333;
     color: #fff;
-    width: 200px;
-    height: 100vh;
     padding: 20px;
   }
   
@@ -50,16 +66,23 @@ body{
   .menu a {
     color: #fff;
     text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
   }
   
-  /* Estilos del logo */
-  .logo {
-    display: block;
-    margin-bottom: 20px;
+  .menu a:hover {
+    background-color: #551a8b;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
   }
   
-  .logo img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
+  /* Estilos del texto del menú */
+  .menu a span {
+    background-color: #e6e6fa;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  .menu a:hover span {
+    background-color: #a020f0;
   }
