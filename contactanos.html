@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contactanos</title>
     <link rel="stylesheet" href="indexStyle.css"/>
 </head>
 <body>
@@ -64,27 +64,17 @@
         &nbsp;
         &nbsp;
           <div class="form-group">
-            <label for="nombre">Nombre: </label> </br>
-            <input type="text" class="form-control" name='nombre' id="nombre" placeholder="nombre...">
+            <label>Asunto:</label><br>
+            <input id="subject" type="text" placeholder="Asunto..."><br><br>
           </div>
           <div class="form-group">
-            <label for="email">Email: </label> </br>
-            <input type="email" class="form-control" name='email' id="email" placeholder="email...">
-          </div>
-          <div class="form-group">
-            <label for="exampleTextarea">Mensaje: </label> </br>
+            <label for="exampleTextarea">Comentario: </label> </br>
             <textarea class="form-control" name='mensaje' id="mensaje" rows="3"></textarea>
           </div>
           <div class="form-group">
             <input type="checkbox" required> Acepto la política de privacidad.
           </div>
-          <input type="button" value="Enviar" onclick="sendMail(); return false">
-
-          <label>Asunto:</label><br>
-          <input id="subject" type="text"><br><br>
-          <label>Comentario:</label><br>
-          <textarea id="comment"></textarea><br><br>
-          
+          <input type="button" value="Enviar" onclick="sendMail(); return false">          
 
 
           <script src="./javascript.js"></script>
