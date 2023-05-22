@@ -77,6 +77,10 @@ body {
     background-color: #fff;
     color: #8e44ad;
   }
+  .menu .active a {
+    background-color: #fff;
+    color: #8e44ad;
+  }
   
   #cuadro {
     margin-left: 30px; /* Ajusta el valor según tu preferencia */
