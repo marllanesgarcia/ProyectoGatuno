@@ -25,3 +25,11 @@ window.location.href = "mailto:" +link;
     var xmlString = new XMLSerializer().serializeToString(xmlDoc);
     document.getElementById("xmlDiv").innerHTML = "<pre><code>" + xmlString + "</code></pre>";
   }
+
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
