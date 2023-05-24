@@ -4,21 +4,23 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element ref="titulo"/>
+                <xs:element ref="tema"/>
                 <xs:element ref="autor"/>
                 <xs:element ref="main"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
     <xs:element name="titulo" type="xs:string"/>
+    <xs:element name="tema" type="xs:string"/>
     <xs:element name="autor" type="xs:string"/>
     <xs:element name="main">
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="unbounded" ref="apartado"/>
+                <xs:element maxOccurs="unbounded" ref="norma"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:element name="apartado">
+    <xs:element name="norma">
         <xs:complexType>
             <xs:sequence>
                 <xs:element maxOccurs="unbounded" ref="linea"/>
@@ -27,4 +29,3 @@
     </xs:element>
     <xs:element name="linea" type="xs:string"/>
 </xs:schema>
-

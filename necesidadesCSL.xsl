@@ -7,28 +7,32 @@
 			</head>
 			<body>
 				<h1>
-					<span>
-						informacion sobre los gatos
-					</span>
+					<xsl:value-of select="gato/titulo"/>
 				</h1>
 				<h2>
 					<xsl:value-of select="gato/titulo"/>
 				</h2>
-				<h2>
+				<h3>
 					<xsl:value-of select="gato/autor"/>
-				</h2>
-
-				<xsl:for-each select="gato/apartado/linea"> 
-					<div class="apartado">
-						<p class="linea">
-							<xsl:value-of select="."/>
-						</p>
+				</h3>
+			
+          <xsl:for-each select="gato/main/norma"> 
+					<div class="norma">
+							     <xsl:for-each select="linea">
+							     	<span>
+						          <p class="linea">
+     						          <xsl:value-of select="."/>
+						          </p>
+						          </span>
+						      </xsl:for-each>  
 					</div>
+					
 				</xsl:for-each>
 			</body>
 		</html>
 	</xsl:template>
 </xsl:stylesheet>
+
 
 
 
