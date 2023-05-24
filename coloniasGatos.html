@@ -25,9 +25,38 @@
             </nav>
         </div>
     </div>
-    <div> <iframe src="necesidadesFelinas.xml" frameborder="0" width="100%" height="400"></iframe></div>
+    <div id="xmlObject"></div>
 
-  
+    <script>
+        // Obtener el contenido del archivo XML utilizando fetch
+        fetch('ProyectoGatuno/necesidadesFelinas.xml')
+            .then(response => response.text())
+            .then(xmlString => {
+                // Crear un nuevo objeto DOMParser
+                const parser = new DOMParser();
+
+                // Parsear el contenido del archivo XML
+                const xmlDoc = parser.parseFromString(xmlString, 'text/xml');
+
+                // Obtener el contenido deseado del archivo XML
+                const titulo = xmlDoc.querySelector('gato titulo').textContent;
+                const autor = xmlDoc.querySelector('gato autor').textContent;
+
+                // Crear elementos HTML para mostrar el contenido del archivo XML
+                const xmlContent = document.getElementById('xmlContent');
+                const titleElement = document.createElement('h1');
+                titleElement.textContent = titulo;
+                const authorElement = document.createElement('h3');
+                authorElement.textContent = autor;
+
+                // Agregar los elementos al div xmlContent
+                xmlContent.appendChild(titleElement);
+                xmlContent.appendChild(authorElement);
+            })
+            .catch(error => {
+                console.error('Error al cargar el archivo XML:', error);
+            });
+    </script>
 
 
 </body>
