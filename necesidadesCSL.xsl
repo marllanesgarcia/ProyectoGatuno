@@ -10,7 +10,7 @@
 					<xsl:value-of select="gato/titulo"/>
 				</h1>
 				<h2>
-					<xsl:value-of select="gato/titulo"/>
+					<xsl:value-of select="gato/tema"/>
 				</h2>
 				<h3>
 					<xsl:value-of select="gato/autor"/>

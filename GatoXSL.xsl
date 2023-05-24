@@ -7,16 +7,14 @@
 			</head>
 			<body>
 				<h1>
-					<span>
-						informacion sobre los gatos
-					</span>
+					<xsl:value-of select="gato/titulo"/>
 				</h1>
 				<h2>
-					<xsl:value-of select="gato/titulo"/>
+					<xsl:value-of select="gato/tema"/>
 				</h2>
-				<h2>
+				<h3>
 					<xsl:value-of select="gato/autor"/>
-				</h2>
+				</h3>
 
 				<xsl:for-each select="gato/norma/linea"> 
 					<div class="norma">

@@ -18,6 +18,10 @@ body {
     padding: 10px;
     justify-content: space-between;
   }
+
+  .containerGrande{
+    flex-direction: column;
+  }
   
   .container2{
     position: fixed;
@@ -30,6 +34,20 @@ body {
     padding: 10px;
     justify-content: space-between;
     margin-left: 30%;
+  }
+
+  .container3{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    padding: 10px;
+    justify-content: space-between;
+    margin-left: 40%;
+    margin-right: 30%;
   }
 
   .form-group{

@@ -1,62 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="GatoXSL.xsl"?>
-<gato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="GatoSaludable.xsd">
-	<titulo>Cuidados para un gato saludable</titulo>
-	<autor>Monia y Mar</autor>
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="GatoXSL.xsl"?> 
+<gato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gato.xsd">
+	<titulo>Como hacer una casa para Gatos Callejeros</titulo>
+	<tema>Esto es importante ya que asi no duermen debajo de coches y se pueden
+            refugiar mejor de los cambios climáticos y de los peligros como los coches.</tema>
+	<autor>Monica y Mar</autor>
 	<main>
-		<norma>
-			<linea>Los gatos suelen ser mascotas exigentes que precisan de 
-			ciertas rutinas de cuidado para mantenerse saludables al 100%.
-			Pese a que en sus hábitos diarios ya incorporan el acicalamiento 
-			personal como medida de higiene, hay otra serie de aspectos que 
-			debes tener en cuenta que para que se sientan felices y cuidados. </linea>
-			<linea> Alimentación</linea>
-			<linea>Siempre de calidad y adaptada a sus etapas de vida. Los gatitos tienen necesidades 
-			nutricionales distintas a las de los gatos adultos, centradas en fomentar su correcto desarrollo 
-			y crecimiento, y además el número de sus tomas diarias suele ser más frecuente. 
-			A partir del año, el gato se considera adulto, y suele necesitar alimentos menos 
-			calóricos para evitar el posible sobrepeso, u otras variedades de producto que respondan a un nuevo estadio </linea>
-			<linea> Agua</linea>	
-			<linea> Limpia, en abundancia e idealmente servida en bebederos de acero inoxidable 
-			o aluminio. En verano, ubica varios bebederos de estas características en distintos 
-			lugares de tu casa, para que tu gato siempre tenga agua a mano si quiere beber. </linea>			
+			<norma>
+			<linea>Estructura fuerte, Madera: si se quiere hacer una estructura de madera, 
+			tambien se puede recubrir con una pintura impermeable.</linea>	
+			<linea>Carton:puede ser el contenido de carton pero que este recubierto por
+			un elemento impermeable para que asi resguarde a los gatos del frio, agua, etc...</linea>
 		</norma>
 		<norma>
-			<linea> Mantenimiento óptimo del arenero </linea>
-			<linea> Adquiere un arenero que se adapte bien a sus dimensiones, sobre todo cuando 
-			tu gato ya haya alcanzado su etapa adulta. Colócalo en un lugar tranquilo, 
-			alejado de la zona de alimentación, bebida y relax. Con ayuda de una pala 
-			retira sus deposiciones diarias, y cambia la arena con una frecuencia semanal.</linea>
-			<linea> Uñas y patas</linea>
-			<linea>Acostúmbralo a limarse las uñas en un rascador desde que es gatito. 
-			Ésta es la mejor solución para que no recurra a hacerlo en sofás, cortinas y muebles. 
-			Añade a este aspecto la rutina del corte de uñas. Ciertamente, puede ser una labor compleja 
-			y estresante para tu gato y para ti, pero en tiendas especializadas en mascotas 
-			puedes adquirir tijeras seguras que impedirán que puedas dañar alguno de sus nervios. 
-			Si te ves muy apurado, aprovecha una de las visitas al veterinario para que 
-			te explique cómo llevar a cabo el corte de uñas en las condiciones más favorables para ambos</linea>
-			<linea> Ejercitarlo mediante el juego</linea>
-			<linea>No es necesario que le compres un super parque de juego. Con imaginación y algunos 
-			remedios caseros, puedes construirle elementos que lo incentiven a jugar e interactuar contigo, 
-			tales como pelotas de trapo, cajas de cartón con distintos niveles, o premiarle con juguetes tipo 
-			ratitas que despertarán sus instintos naturales de caza.</linea>			
+			<linea>Lo imprescindible es que sea impermeable.</linea>		
+			 <linea>
+			 Tamaños: Pequeño: 50,25 (largo) x 36 (ancho) x 30 (alto) Para un gato. 
+			 Mediano: 60 (largo) x 60 (ancho) x 36 (alto) Para uno o dos gatos. 
+			 Grande: 95 (largo) x 60 (ancho) x 36 (alto) Para 5 o 6 gatos.</linea>		
 		</norma>
-		<norma>
-			<linea> El cepillado </linea>
-			<linea>Totalmente imprescindible si tienes un gato con pelo semilargo o largo. 
-			Busca aquel momento en el que lo intuyas más tranquilo y predispuesto al contacto contigo, 
-			y aprovecha para convertir la rutina del cepillado en una tarea habitual.
-			En tiendas especializadas en mascotas puedes encontrar la mejor opción de cepillo para cubrir las 
-			características de tu gato, teniendo en cuenta que la finalidad es eliminar el exceso de pelo 
-			muerto y la consecuente formación de nudos o bolas de pelo en el estómago. </linea>		
-			<linea> Visitas periódicas al veterinario</linea>
-			<linea> No olvides que los gatos, como ocurre con los perros, también necesitan tener 
-			su cartilla de vacunas en regla y pasar por los procesos de desparasitación (interna y externa). 
-			Los veterinarios suelen aprovechar estas visitas para realizarle una exploración completa a tu gato, 
-			inspeccionando sus oídos, estado de sus dientes, aparición de posibles masas, estado de la piel, pelo y ojos. 
-			Este aspecto, de carácter preventivo, ayudará a que tu gato goce de una salud extraordinaria, 
-			y te confirmará que está excelentemente bien cuidado. </linea>
-
-		</norma>
+	
 	</main>
 </gato>
