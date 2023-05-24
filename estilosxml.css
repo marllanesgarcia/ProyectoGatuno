@@ -61,7 +61,7 @@ p::before{
 div::before{
 
   counter-increment: div;
-  content: "Norma " counter(div) ": ";
+  content: "norma" counter(div) ": ";
 
 }
 

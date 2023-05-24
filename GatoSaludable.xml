@@ -4,7 +4,7 @@
 	<titulo>Cuidados para un gato saludable</titulo>
 	<autor>Monia y Mar</autor>
 	<main>
-		<apartado>
+		<norma>
 			
 			<linea>Los gatos suelen ser mascotas exigentes que precisan de 
 			ciertas rutinas de cuidado para mantenerse saludables al 100%.
@@ -21,8 +21,8 @@
 			<linea> Limpia, en abundancia e idealmente servida en bebederos de acero inoxidable 
 			o aluminio. En verano, ubica varios bebederos de estas características en distintos 
 			lugares de tu casa, para que tu gato siempre tenga agua a mano si quiere beber. </linea>			
-		</apartado>
-		<apartado>
+		</norma>
+		<norma>
 			<linea> Mantenimiento óptimo del arenero </linea>
 			<linea> Adquiere un arenero que se adapte bien a sus dimensiones, sobre todo cuando 
 			tu gato ya haya alcanzado su etapa adulta. Colócalo en un lugar tranquilo, 
@@ -41,8 +41,8 @@
 			remedios caseros, puedes construirle elementos que lo incentiven a jugar e interactuar contigo, 
 			tales como pelotas de trapo, cajas de cartón con distintos niveles, o premiarle con juguetes tipo 
 			ratitas que despertarán sus instintos naturales de caza.</linea>			
-		</apartado>
-		<apartado>
+		</norma>
+		<norma>
 			<linea> El cepillado </linea>
 			<linea>Totalmente imprescindible si tienes un gato con pelo semilargo o largo. 
 			Busca aquel momento en el que lo intuyas más tranquilo y predispuesto al contacto contigo, 
@@ -58,6 +58,6 @@
 			Este aspecto, de carácter preventivo, ayudará a que tu gato goce de una salud extraordinaria, 
 			y te confirmará que está excelentemente bien cuidado. </linea>
 
-		</apartado>
+		</norma>
 	</main>
 </gato>
