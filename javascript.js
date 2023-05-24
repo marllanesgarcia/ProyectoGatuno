@@ -8,3 +8,7 @@ var link = "317webpingu@gmail.com"
  
 window.location.href = "mailto:" +link;
 }
+
+function redireccionar(url) {
+    window.location.href = url;
+  }
