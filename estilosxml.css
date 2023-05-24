@@ -53,15 +53,15 @@ p{
 
 p::before{
 
-  counter-increment: verso;
-  content: "Verso " counter(verso) ": ";
+  counter-increment: linea;
+  content: "" counter(linea) ": ";
 
 }
 
 div::before{
 
   counter-increment: div;
-  content: "Estrofa " counter(div) ": ";
+  content: "Norma " counter(div) ": ";
 
 }
 
