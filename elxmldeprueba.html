@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de div con XML externo</title>
+  <style>
+    #xmlDiv {
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      overflow: auto;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="xmlDiv"></div>
+  <h1>Otro contenido en la página</h1>
+  <p>Este es un párrafo en la página.</p>
+
+  <script>
+    // Carga del archivo XML externo
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        mostrarXML(this);
+      }
+    };
+    xhttp.open("GET", "ProyectoGatuno/necesidadesFelinas.xml", true); // Reemplaza "ruta/archivo.xml" con la ruta real de tu archivo XML externo
+    xhttp.send();
+
+    // Función para mostrar el XML en el div
+    function mostrarXML(xml) {
+      var xmlDoc = xml.responseXML;
+      var xmlString = new XMLSerializer().serializeToString(xmlDoc);
+      document.getElementById("xmlDiv").innerHTML = "<pre><code>" + xmlString + "</code></pre>";
+    }
+  </script>
+</body>
+</html>
