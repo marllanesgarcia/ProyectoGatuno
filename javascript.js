@@ -9,27 +9,27 @@ var link = "317webpingu@gmail.com"
 window.location.href = "mailto:" +link;
 }
 
-  function cargarXML() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        mostrarXML(this);
-      }
-    };
-    xhttp.open("GET", "https://marllanesgarcia.github.io/ProyectoGatuno/necesidadesFelinas.xml", true); // Reemplaza "ruta/archivo.xml" con la ruta real de tu archivo XML
-    xhttp.send();
-  }
+function cargarXML() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      mostrarXML(this);
+    }
+  };
+  xhttp.open("GET", "https://marllanesgarcia.github.io/ProyectoGatuno/necesidadesFelinas.xml", true); // Reemplaza "ruta/archivo.xml" con la ruta real de tu archivo XML
+  xhttp.send();
+}
 
-  function mostrarXML(xml) {
-    var xmlDoc = xml.responseXML;
-    var xmlString = new XMLSerializer().serializeToString(xmlDoc);
-    document.getElementById("xmlDiv").innerHTML = "<pre><code>" + xmlString + "</code></pre>";
-  }
+function mostrarXML(xml) {
+  var xmlDoc = xml.responseXML;
+  var xmlString = new XMLSerializer().serializeToString(xmlDoc);
+  document.getElementById("xmlDiv").innerHTML = "<pre><code>" + xmlString + "</code></pre>";
+}
 
-  function openModal() {
-    document.getElementById("myModal").style.display = "block";
-  }
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
 
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-  }
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
