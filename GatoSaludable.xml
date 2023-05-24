@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="GatoXSL.xsl"?> 
-<gato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gato.xsd">
+<?xml-stylesheet type="text/xsl" href="GatoXSL.xsl"?>
+<gato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="GatoSaludable.xsd">
 	<titulo>Cuidados para un gato saludable</titulo>
 	<autor>Monia y Mar</autor>
 	<main>
 		<norma>
-			
 			<linea>Los gatos suelen ser mascotas exigentes que precisan de 
 			ciertas rutinas de cuidado para mantenerse saludables al 100%.
 			Pese a que en sus hábitos diarios ya incorporan el acicalamiento 
