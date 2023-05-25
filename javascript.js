@@ -4,7 +4,7 @@ function sendMail() {
 var link = "317webpingu@gmail.com"
 + "?cc=317webpingu@gmail.com"
 + "&subject=" + escape(document.getElementById('subject').value)
-+ "&body=" + escape(document.getElementById('comment').value);
++ "&body=" + escape(document.getElementById('mensaje').value);
  
 window.location.href = "mailto:" +link;
 }
