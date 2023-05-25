@@ -151,16 +151,15 @@ const textoInput = document.getElementById('texto-input');
 const textoMostrado = document.getElementById('texto-mostrado');
 
 function mostrarTextoAlmacenado() {
-  var textoAlmacenado = sessionStorage.getItem('texto') || 'sin identificar';
+  var textoAlmacenado = sessionStorage.getItem('text') || 'sin identificar';
   var textoMostrado = document.getElementById('texto-mostrado');
   textoMostrado.textContent = textoAlmacenado;
-  
-  
+ 
 }
 
 function almacenarEnSessionStorage() {
   var textoInput = document.getElementById('texto-input').value;
-  sessionStorage.setItem('texto', textoInput);
+  sessionStorage.setItem('text', textoInput);
   alert('Bienvenido '+textoInput);
   
 }
