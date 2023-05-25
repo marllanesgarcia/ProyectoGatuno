@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="necesidadesCSL.xsl"?> 
+<?xml-stylesheet type="text/xsl" href="GatoXSL.xsl"?> 
 <gato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="necesidadesFelinas.xsd">
 	<titulo>Control Colonias Felinas</titulo>
 	<tema>NECESIDADES CUBIERTAS</tema>
