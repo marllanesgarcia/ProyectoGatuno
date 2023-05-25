@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recursos</title>
+        <link rel="stylesheet" href="indexStyle.css"/>
+        
     <style>
-        #nombre {
-            position: fixed;
-            top: 0;
-            right: 0;
-            padding: 10px;
-            background-color: #f1f1f1;
-        }
+        
     </style>
 </head>
 <body>
-    <form id="formulario">
+
+<!--     <form id="formulario">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
         <button type="submit">Registrar</button>
@@ -29,7 +30,19 @@
             nombreDiv.textContent = nombre;
             document.body.appendChild(nombreDiv);
         });
-    </script>
+    </script> -->
+
+    
+    <div id="nombre-form">
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <div id="nombre-registrado"></div>
+
+    <script src="javascript.js"></script>
 </body>
 </html>
-
