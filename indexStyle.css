@@ -19,8 +19,21 @@ body {
     justify-content: space-between;
   }
 
-  .containerGrande{
+  .containerGrande {
+    display: flex;
     flex-direction: column;
+  }
+  
+  .container3,
+  .container4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .container4 {
+    margin-top: 20px;
   }
   
   .container2{
@@ -36,7 +49,7 @@ body {
     margin-left: 30%;
   }
 
-  .container3{
+  /* .container3{
     position: fixed;
     top: 0;
     right: 0;
@@ -48,7 +61,7 @@ body {
     justify-content: space-between;
     margin-left: 40%;
     margin-right: 30%;
-  }
+  } */
 
   .form-group{
     font-size: x-large;

@@ -5,22 +5,17 @@
 	<tema>PASOS</tema>
 	<autor>Monica y Mar</autor>
 	<main>
-	    <norma>
-			<linea>COLABORACION HUMANA</linea>		
-			<linea>Ayudar a los gatos a tener mejores condiciones de vida</linea>		
-		</norma>
-		<norma>
-			<linea>ALIMENTO</linea>	
-			<linea>Diponibles dentro y alrededores de la colonia</linea>
-		</norma>
-		<norma>
-			<linea>AGUA</linea>		
-			 <linea>Limpia y abundante</linea>		
-		</norma>
-	    <norma>
-			<linea>REFUGIO</linea>		
-			 <linea>Proteccion y confort</linea>		
-		</norma>
+	   <norma>
+			<linea>1. Cortar los tetabriks para abrilos completamente</linea>		
+			<linea>2. Colocar los tetabriks abiertos alrededor de la caja</linea>		
 		
+		
+			<linea>3. Pegar con cinta el tabrik a la caja</linea>	
+			<linea>4. Reforzar las esquinas con la cinta</linea>
+		
+		
+			<linea>5. Poner una capa extra de carton en el suelo</linea>		
+			<linea>6. Extra de tetabriks si se quiere</linea>		
+		</norma>
 	</main>
 </gato>
