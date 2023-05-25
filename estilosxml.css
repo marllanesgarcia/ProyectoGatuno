@@ -19,7 +19,7 @@ h1 {
   margin-left: 10;
   padding: 20;
   color: rgb(11, 116, 207);
-  font-family: fantasy;
+  font-family:monospace;
   text-shadow: 1px 1px 2px brown;
   border: black 2px solid;
 
