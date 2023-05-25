@@ -34,6 +34,21 @@ function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
 
+function seleccionar(){
+    document.getElementById("formulario").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var nombre = document.getElementById("nombre").value;
+    document.getElementById("nombre").value = ""; // Borra el valor del input
+
+    var nombreDiv = document.createElement("div");
+    nombreDiv.textContent = nombre;
+    document.getElementById("nombre-registrado").appendChild(nombreDiv);
+});
+}
+
+
+
+
 /* function seleccionar(name){
 
   event.preventDefault();
@@ -71,6 +86,9 @@ document.getElementById("name").innerHTML = localStorage.getItem(name);
     document.body.appendChild(nombreDiv);
 
  } */
+
+
+
 
 
 
