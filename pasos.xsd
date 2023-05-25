@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="gato">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="titulo"/>
+                <xs:element ref="tema"/>
+                <xs:element ref="autor"/>
+                <xs:element ref="main"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="titulo" type="xs:string"/>
+    <xs:element name="tema" type="xs:NCName"/>
+    <xs:element name="autor" type="xs:string"/>
+    <xs:element name="main">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="norma"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="norma">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="linea"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="linea" type="xs:string"/>
+</xs:schema>
