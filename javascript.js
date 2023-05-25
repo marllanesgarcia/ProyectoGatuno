@@ -75,7 +75,18 @@ var nombreRegistrado = getCookie("nombreRegistrado");
 document.getElementById("nombre-registrado").textContent = nombreRegistrado;
 
 
+function aplicarCambios() {
+  var color = document.getElementsByName('colorElegido')[0];
+  console.log('color elegido ' + color.value);
 
+  var tam = document.getElementsByName('tamFuente')[0];
+  var tamelegido = tam[tam.selectedIndex].value;
+
+  document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
+  document.documentElement.style.setProperty("--colorNormal", color.value);
+//    document.getElementById('mensaje').innerHTML = "APLICADO";
+
+}
 
 /* function seleccionar(name){
 

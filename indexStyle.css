@@ -328,3 +328,15 @@ dialog button:hover {
   font-size: large;
   background-color: #c592ffc2;
 }
+
+
+/*  codigo recursos para ajustes */
+:root {
+  --colorNormal:black;
+  font-size:1rem;
+
+}
+
+p, h1, h2, h3 {
+  color:var(--colorNormal);
+}
