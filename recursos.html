@@ -57,10 +57,6 @@
         </nav>
     </div>
     </div>
-    
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="texto-input" placeholder="nombre. . ." required>
-            <button onclick="almacenarEnSessionStorage(),mostrarTextoAlmacenado()">Registrar</button>
 
     <label>
         <button onclick="cambiarModo()">
@@ -70,10 +66,16 @@
     </label>
 
     <section id="ajustes">
+        
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="texto-input" placeholder="nombre. . ." required>
+        <button onclick="almacenarEnSessionStorage(),mostrarTextoAlmacenado()">Registrar</button>
+        <div id="texto-mostrado"></div>
 
         <p id="esteParrafo">Elija un Color</p>
         <input type="color" name="colorElegido" />
-        <br />
+        <br/>
 
         <p>Elija la fuente base del documento</p>
         <select name="tamFuente">
@@ -89,7 +91,6 @@
     <script>
         
         mostrarTextoAlmacenado();
-        decirHola();
         
             function cambiarColor(selectElement) {
                 
