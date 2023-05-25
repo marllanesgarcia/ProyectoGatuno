@@ -16,12 +16,17 @@
 					<xsl:value-of select="gato/autor"/>
 				</h3>
 
-				<xsl:for-each select="gato/norma/linea"> 
+			<xsl:for-each select="gato/main/norma"> 
 					<div class="norma">
-						<p class="linea">
-							<xsl:value-of select="."/>
-						</p>
+							     <xsl:for-each select="linea">
+							     	<span>
+						          <p class="linea">
+     						          <xsl:value-of select="."/>
+						          </p>
+						          </span>
+						      </xsl:for-each>  
 					</div>
+					
 				</xsl:for-each>
 			</body>
 		</html>

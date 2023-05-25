@@ -53,15 +53,15 @@ p{
 
 p::before{
 
-  counter-increment: linea;
-  content: "" counter(linea) ": ";
+  counter-increment: p;
+  content: "" counter(p) ": ";
 
 }
 
 div::before{
 
   counter-increment: div;
-  content: "norma" counter(div) ": ";
+  content: "Norma " counter(div) ": ";
 
 }
 
