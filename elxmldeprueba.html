@@ -1,66 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ejemplo de visualización de XML en HTML</title>
-  <!-- <script>
-    function cargarXML() {
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          mostrarXML(this);
+    <style>
+        #nombre {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            background-color: #f1f1f1;
         }
-      };
-      xhttp.open("GET", "https://marllanesgarcia.github.io/ProyectoGatuno/necesidadesFelinas.xml", true); // Reemplaza "ruta/archivo.xml" con la ruta real de tu archivo XML
-      xhttp.send();
-    }
-
-    function mostrarXML(xml) {
-      var xmlDoc = xml.responseXML;
-      var xmlString = new XMLSerializer().serializeToString(xmlDoc);
-      document.getElementById("xmlDiv").innerHTML = "<pre><code>" + xmlString + "</code></pre>";
-    }
-  </script>
+    </style>
 </head>
-<body onload="cargarXML()">
-  <h1>Título de la página</h1>
-  <div id="xmlDiv"></div>
-  <p>Este es un párrafo en la página después de mostrar el XML.</p>
-</body> -->
+<body>
+    <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <button type="submit">Registrar</button>
+    </form>
 
-<body onload="cargarXML()">
-  <div class="container">
-    <div class="container2">
-      <div class="logo">
-        <img src="logo2.1.png" alt="Logo">
-    </div>
-    <nav class="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li class="active"><a href="coloniasGatos.html">Colonias de Gatos</a></li>
-            <li><a href="recursos.html">Recursos</a></li>
-            <li><a href="contactanos.html">Contactanos</a></li>
-        </ul>
-    </nav>
-    <div class="containerGrande">
-      <div>
-        <h1> &nbsp;&nbsp;INFORMACION SOBRE LAS COLONIAS DE GATOS </h1>
-  
-  
-        <!--    &nbsp; 
-    &nbsp; 
-    &nbsp;  -->
-    </div>
-    </div>
-    </div>
-    <div class="container3">
-      &nbsp;
-        <iframe src="https://marllanesgarcia.github.io/ProyectoGatuno/necesidadesFelinas.xml" width="500" height="600"></iframe>
-        <iframe src="https://marllanesgarcia.github.io/ProyectoGatuno/GatoSaludable.xml" width="500" height="600"></iframe>
-    
-    </div>
-  </div>
- 
-  
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var nombre = document.getElementById("nombre").value;
+            document.getElementById("nombre").value = ""; 
+
+            var nombreDiv = document.createElement("div");
+            nombreDiv.setAttribute("id", "nombre");
+            nombreDiv.textContent = nombre;
+            document.body.appendChild(nombreDiv);
+        });
+    </script>
 </body>
-
 </html>
+
