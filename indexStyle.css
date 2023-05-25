@@ -379,7 +379,7 @@ p, h1, h2, h3 {
   color: #fff;
 }
 
-.modo-noche .modal-content , dialog::backdrop {
+.modo-noche .modal-content  dialog::backdrop {
   background-color: #111;
   color: #fff;
 }
