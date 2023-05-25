@@ -368,3 +368,18 @@ p, h1, h2, h3 {
   background-color: rgb(150, 109, 216);
   color: #000;
 }
+/* Estilos para el modo noche */
+.modo-noche {
+  background-image: url(modonoche.jpg);
+  color: #fff;
+}
+
+
+.modo-noche p, h1, h2, h3 {
+  color: #fff;
+}
+
+.modo-noche .modal-content {
+  background-color: #111;
+  color: #fff;
+}
