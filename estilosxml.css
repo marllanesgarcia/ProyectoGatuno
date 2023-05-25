@@ -20,6 +20,7 @@ h1 {
   padding: 20;
   color: rgb(22, 106, 179);
   font-style: var(Monaco);
+  text-shadow: 1px 1px 2px brown;
   border: black 2px solid;
 
 }
@@ -34,9 +35,9 @@ h2 {
 }
 
 div{
-  width: 75%;
-  margin-left: 5%;
-  margin-right: 5%;
+
+  margin-left: 15%;
+  
   background-color: black;
   color: aliceblue;
   font-size: large;
