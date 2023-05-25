@@ -24,13 +24,19 @@ body {
     flex-direction: column;
   }
   
-  .container3,
-  .container4 {
+  .container3,.container4{
+    position: fixed;
+    top: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    padding: 10px;
     justify-content: space-between;
-    margin: 10px;
-  }
+    margin-left: 40%;
+    margin-right: 30%;
+  } 
   
   .container4 {
     margin-top: 20px;
@@ -49,19 +55,7 @@ body {
     margin-left: 30%;
   }
 
-  /* .container3{
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    z-index: 1;
-    padding: 10px;
-    justify-content: space-between;
-    margin-left: 40%;
-    margin-right: 30%;
-  } */
+  
 
   .form-group{
     font-size: x-large;
