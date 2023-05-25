@@ -341,3 +341,13 @@ dialog button:hover {
 p, h1, h2, h3 {
   color:var(--colorNormal);
 }
+
+#ajustes{
+
+  justify-content: center;
+  align-self: flex-start;
+  align-items: baseline;
+  align-content: flex-start;
+  background-color: rgb(150, 109, 216);
+  color: #000;
+}
