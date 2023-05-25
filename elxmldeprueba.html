@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Ejemplo de visualización de XML en HTML</title>
-  <script>
+  <!-- <script>
     function cargarXML() {
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
@@ -25,5 +25,42 @@
   <h1>Título de la página</h1>
   <div id="xmlDiv"></div>
   <p>Este es un párrafo en la página después de mostrar el XML.</p>
+</body> -->
+
+<body onload="cargarXML()">
+  <div class="container">
+    <div class="container2">
+      <div class="logo">
+        <img src="logo2.1.png" alt="Logo">
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="active"><a href="coloniasGatos.html">Colonias de Gatos</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="contactanos.html">Contactanos</a></li>
+        </ul>
+    </nav>
+    <div class="containerGrande">
+      <div>
+        <h1> &nbsp;&nbsp;INFORMACION SOBRE LAS COLONIAS DE GATOS </h1>
+  
+  
+        <!--    &nbsp; 
+    &nbsp; 
+    &nbsp;  -->
+    </div>
+    </div>
+    </div>
+    <div class="container3">
+      &nbsp;
+        <iframe src="https://marllanesgarcia.github.io/ProyectoGatuno/necesidadesFelinas.xml" width="500" height="600"></iframe>
+        <iframe src="https://marllanesgarcia.github.io/ProyectoGatuno/GatoSaludable.xml" width="500" height="600"></iframe>
+    
+    </div>
+  </div>
+ 
+  
 </body>
+
 </html>
