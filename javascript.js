@@ -87,3 +87,58 @@ function aplicarCambios() {
 //    document.getElementById('mensaje').innerHTML = "APLICADO";
 
 }
+// Obtener los elementos del formulario y del párrafo donde se mostrará el nombre
+const formulario = document.getElementById("formulario");
+const inputNombre = document.getElementById("nombre");
+const parrafoNombre = document.getElementById("nombre-registrado");
+
+// Cargar el nombre almacenado en localStorage al cargar la página
+window.addEventListener("DOMContentLoaded", () => {
+  const nombreGuardado = localStorage.getItem("nombre");
+  if (nombreGuardado) {
+    parrafoNombre.textContent = `¡Bienvenido/a, ${nombreGuardado}!`;
+  }
+});
+
+// Escuchar el evento de envío del formulario
+formulario.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  // Obtener el nombre ingresado en el formulario
+  const nombre = inputNombre.value;
+
+  // Guardar el nombre en localStorage
+  localStorage.setItem("nombre", nombre);
+
+  // Mostrar el nombre en el párrafo correspondiente
+  parrafoNombre.textContent = `¡Bienvenido/a, ${nombre}!`;
+});
+
+// Función para aplicar los cambios realizados en los ajustes
+function aplicarCambios() {
+  // Obtener los valores de los ajustes
+  const colorElegido = document.querySelector("input[name='colorElegido']").value;
+  const tamFuente = document.querySelector("select[name='tamFuente']").value;
+
+  // Guardar los valores en localStorage
+  localStorage.setItem("color", colorElegido);
+  localStorage.setItem("tamFuente", tamFuente);
+
+  // Aplicar los cambios en la página actual (y en las demás páginas si se recargan)
+  document.body.style.backgroundColor = colorElegido;
+  document.body.style.fontSize = `${tamFuente}rem`;
+}
+
+// Cargar los ajustes almacenados en localStorage al cargar la página
+window.addEventListener("DOMContentLoaded", () => {
+  const colorGuardado = localStorage.getItem("color");
+  const tamFuenteGuardado = localStorage.getItem("tamFuente");
+
+  if (colorGuardado) {
+    document.body.style.backgroundColor = colorGuardado;
+  }
+
+  if (tamFuenteGuardado) {
+    document.body.style.fontSize = `${tamFuenteGuardado}rem`;
+  }
+});
