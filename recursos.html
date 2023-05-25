@@ -16,10 +16,10 @@
         });
         
     </script>
-
+    <div id="nombre-registrado"></div>
 </head>
 <body>
-  <div id="nombre-registrado"></div>
+ 
   <div class="container">
     <div class="container2">
         <div class="logo">
@@ -58,14 +58,9 @@
     </div>
     </div>
     
-    <div id="nombre-form">
-        <form id="formulario">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <button type="submit" onclick="almacenarEnSessionStorage(),mostrarTextoAlmacenado()">Registrar</button>
-
-        </form>
-    </div>
+            <input type="text" id="texto-input" placeholder="nombre. . ." required>
+            <button onclick="almacenarEnSessionStorage(),mostrarTextoAlmacenado()">Registrar</button>
 
     <label>
         <button onclick="cambiarModo()">
