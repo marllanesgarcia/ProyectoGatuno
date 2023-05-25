@@ -33,3 +33,24 @@ function openModal() {
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
+
+function seleccionar(name){
+
+  event.preventDefault();
+
+  // console.log('working');
+
+  var name=document.getElementById('name').value;
+  var user= {
+    name:name,
+  };
+  var guardado=JSON.stringify(user);
+  localStorage.setItem(name,guardado);
+  console.log('Nombre añadido');
+  /* 
+localStorage.setItem("name", name);
+document.getElementById("name").innerHTML = localStorage.getItem(name);
+  
+  var name=0;
+  sessionStorage.setItem('',name); */
+}
