@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="necesidadesCSL.xsl"?> 
 <gato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="necesidadesFelinas.xsd">
 	<titulo>Control Colonias Felinas</titulo>
-	<tema>TENER SUS NECESIDADES CUBIERTAS</tema>
+	<tema>NECESIDADES CUBIERTAS</tema>
 	<autor>Monica y Mar</autor>
 	<main>
 	    <norma>
