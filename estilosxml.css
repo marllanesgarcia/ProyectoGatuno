@@ -18,7 +18,7 @@ h1 {
 
   margin-left: 10;
   padding: 20;
-  color: aliceblue;
+  color: rgb(22, 106, 179);
   font-style: var(Monaco);
   border: black 2px solid;
 
@@ -40,15 +40,15 @@ div{
   background-color: black;
   color: aliceblue;
   font-size: large;
-
+  font-style:italic;
 }
 
 p{
-
+  font-size: large;
   margin-top: 5;
   margin-bottom: 5;
   margin-left: 5; 
-  background-color: rgb(182, 126, 61);
+  background-color: rgb(208, 145, 73);
 
 }
 
@@ -57,15 +57,15 @@ p{
 div::before{
 
   counter-increment: div;
-  content: "Norma " counter(div) ": ";
+  content: "Norma " counter(div) ;
 
 }
 
 span{
 
   background-color: rgb(140, 0, 255);
-  font-style: italic;
-  color: rgb(233, 152, 226);
+  font-style:oblique;
+  color: black;
   font-weight: bold;
 
 }
