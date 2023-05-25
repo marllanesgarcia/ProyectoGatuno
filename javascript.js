@@ -84,7 +84,7 @@ function aplicarCambios() {
 
   document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
   document.documentElement.style.setProperty("--colorNormal", color.value);
-//    document.getElementById('mensaje').innerHTML = "APLICADO";
+  document.getElementById('mensaje').innerHTML = "APLICADO";
 
 }
  */
