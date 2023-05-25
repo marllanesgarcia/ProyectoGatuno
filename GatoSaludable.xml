@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="GatoXSL.xsl"?> 
 <gato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Gato.xsd">
-	<titulo>Como hacer una casa para Gatos Callejeros</titulo>
-	<tema>Esto es importante ya que asi no duermen debajo de coches y se pueden
-            refugiar mejor de los cambios climáticos y de los peligros como los coches.</tema>
+	<titulo>Materiales para una casa de gatos callejeros</titulo>
+	<tema>CASA ASEGURADA</tema>
 	<autor>Monica y Mar</autor>
 	<main>
 			<norma>
