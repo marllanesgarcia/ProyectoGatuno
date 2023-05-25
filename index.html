@@ -90,6 +90,39 @@
                 </div>
               
               </div>
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              <div id="boton" align="center">
+                <button onclick="window.modal.showModal();">Bienvenido.</button>
+                <dialog id="modal">
+                    <p > Somos Monica Seys Oltra y Mar Llanes Garcia de 1ºDAW. </br>
+                        Esta pagina contiene los diferentes elementos que se requieren en la rubrica.</br>
+                        &nbsp;1. La pagina web tiene cuatro paginas en total, más dos xml insertados en una de ellas.</br>
+                        &nbsp;2. En la pagina "Home" se muestra un modal explicativo (este) que se pedia nada mas abrir el link.</br>
+                        &nbsp;3. En la pagina "Colonias de Gatos" se muestra un modal explicativo (este) que se pedia nada mas abrir el link.</br>
+                        &nbsp;4. El menu que se pedía se encuentra a lo largo de las cuatro páginas en la parte derecha de cada una junto a un Logo
+                        hecho por nosotras.</br>
+                        &nbsp;5. Las diferentes paginas que se piden son: La pagina info es la de Home (esta), la pagina de Ajustes es "Recursos" y
+                        la otra es la que se llama "colonia de gatos" y "Contactanos".</br>
+                        &nbsp;6. En la página "Recursos", se encuentra la página con los diferentes ajustes que hacen que se cambie la página y se
+                        mantengan al recargar. </br>
+                        &nbsp;7. Hay dos xml/xsl en la página "Colonia de Gatos" en el html. </br>
+                        &nbsp;8. Hemos usado javascript para diferentes páginas; para este modal, para enviar un gmail desde la pagina "Contactanos", etc.</br>
+                        &nbsp;9. Los elementos de entrada de datos sobre todo se muestran en la página de recursos.</br>
+                        &nbsp;10. En la pagina de "Recursos", se pide el nombre del usuario, se muestra y si se recarga, no se queda. </br>
+                        </p>
+                <button onclick="window.modal.close();">Cerrar.</button>
+                </dialog>
+            </div>
+
+              <div class="form-group">
+                <label>Dime tu nombre de ususario:</label><br>
+                <input id="subject" type="text" placeholder="Usuario..."><br><br>
+              </div>
+              <input type="button" value="Seleccionar" onclick="sendMail(); return false">          
+    
+
 
             <h1> HOME: </h1>
             <p>
@@ -98,38 +131,6 @@
                 Enlaces a otras secciones relevantes del sitio web. 
             
                 Anuncios
-            </p>
-    
-            <h1> COLONIAS DE GATOS: </h1>
-            <p>
-                Información general sobre las colonias de gatos.
-                Beneficios del control de colonias.
-                Estadísticas y datos relevantes.
-                Consejos sobre cómo identificar y gestionar una colonia. 
-        
-                APARTADO: Control.
-                Detalles sobre los programas de control de colonias de gatos que ofreces.
-                Información sobre esterilización, castración y cuidado de gatos callejeros.
-                Procedimientos y políticas de adopción.
-            </p>        
-    
-            <h1> RECURSOS: </h1>
-            <p>
-                Enlaces a otros sitios web, organizaciones o recursos relacionados con el control de colonias de gatos.
-                Información sobre eventos, conferencias o talleres próximos. </br>
-        
-                Testimonios o historias de éxito de colonias de gatos que has ayudado a controlar.
-                Fotografías o videos destacados. <b>AQUI XML CON LAS RECOMEDACIONES </b>
-            </p>
-    
-            <h1> CONTACTANOS: </h1>
-            <p>
-                Información sobre tu organización o grupo dedicado al control de colonias de gatos.
-                Misión y objetivos.
-                Experiencia y logros pasados. 
-            
-                Información de contacto de tu organización.
-                Formulario de contacto para consultas o solicitudes de colaboración.
             </p>
     
         </div>
