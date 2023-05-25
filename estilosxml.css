@@ -36,19 +36,17 @@ h2 {
 
 div{
 
-  margin-left: 15%;
-  
+  margin-left: 15%;  
   background-color: black;
   color: aliceblue;
   font-size: large;
-  font-style:italic;
+
 }
 
 p{
   font-size: large;
   margin-top: 5;
   margin-bottom: 5;
-  margin-left: 5; 
   background-color: rgb(208, 145, 73);
 
 }
