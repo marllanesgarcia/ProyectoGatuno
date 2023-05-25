@@ -88,7 +88,7 @@ function aplicarCambios() {
 
 }
  */
-window.onerror = new Function("return true");
+
 
 function sendMail() {
   var link =
@@ -132,69 +132,40 @@ function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
 
-// Obtener el valor de la cookie
-function getCookie(name) {
-  var cookieName = name + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var cookieArray = decodedCookie.split(";");
-
-  for (var i = 0; i < cookieArray.length; i++) {
-    var cookie = cookieArray[i];
-    while (cookie.charAt(0) === " ") {
-      cookie = cookie.substring(1);
-    }
-    if (cookie.indexOf(cookieName) === 0) {
-      return cookie.substring(cookieName.length, cookie.length);
-    }
+function cambiarModo() {
+  if (document.body.classList.contains('modo-noche')) {
+      document.body.classList.remove('modo-noche');
+      localStorage.setItem('modo', 'dia');
+  } else {
+      document.body.classList.add('modo-noche');
+      localStorage.setItem('modo', 'noche');
   }
-
-  return "";
 }
 
-// Obtener el nombre registrado de la cookie
-var nombreRegistrado = getCookie("nombreRegistrado");
 
-// Establecer el nombre registrado en el cuadro de texto
-document.getElementById("nombre-registrado").textContent = nombreRegistrado;
+// Obtener el elemento de entrada de texto
+const textoInput = document.getElementById('texto-input');
 
-// Obtener los elementos del formulario y del párrafo donde se mostrará el nombre
-const formulario = document.getElementById("formulario");
-const inputNombre = document.getElementById("nombre");
-const parrafoNombre = document.getElementById("nombre-registrado");
 
-// Cargar el nombre almacenado en localStorage al cargar la página
-window.addEventListener("DOMContentLoaded", () => {
-  const nombreGuardado = localStorage.getItem("nombre");
-  if (nombreGuardado) {
-    parrafoNombre.textContent = `¡Bienvenido/a, ${nombreGuardado}!`;
-  }
-});
+// Obtener el elemento para mostrar el texto
+const textoMostrado = document.getElementById('texto-mostrado');
 
-// Escuchar el evento de envío del formulario
-formulario.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  // Obtener el nombre ingresado en el formulario
-  const nombre = inputNombre.value;
-
-  // Guardar el nombre en localStorage
-  localStorage.setItem("nombre", nombre);
-
-  // Mostrar el nombre en el párrafo correspondiente
-  parrafoNombre.textContent = `¡Bienvenido/a, ${nombre}!`;
-});
-
-// Función para aplicar los cambios realizados en los ajustes
-function aplicarCambios() {
-  // Obtener los valores de los ajustes
-  const colorElegido = document.querySelector("input[name='colorElegido']").value;
-  const tamFuente = document.querySelector("select[name='tamFuente']").value;
-
-  // Guardar los valores en localStorage
-  localStorage.setItem("color", colorElegido);
-  localStorage.setItem("tamFuente", tamFuente);
-
-  // Aplicar los cambios en la página actual (y en las demás páginas si se recargan)
-  document.documentElement.style.setProperty("--colorNormal", colorElegido);
-  document.documentElement.style.fontSize = parseFloat(tamFuente) + "rem";
+function mostrarTextoAlmacenado() {
+  var textoAlmacenado = sessionStorage.getItem('texto') || 'sin identificar';
+  var textoMostrado = document.getElementById('texto-mostrado');
+  textoMostrado.textContent = textoAlmacenado;
+  
+  
 }
+
+function almacenarEnSessionStorage() {
+  var textoInput = document.getElementById('texto-input').value;
+  sessionStorage.setItem('texto', textoInput);
+  alert('Bienvenido '+textoInput);
+  
+}
+function cambiarFuente(){
+  listValue=localStorage.getItem('fuente');
+  document.body.style.fontFamily = listValue;
+}
+
