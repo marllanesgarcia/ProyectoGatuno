@@ -24,19 +24,13 @@ body {
     flex-direction: column;
   }
   
-  .container3,.container4{
-    position: fixed;
-    top: 0;
-    right: 0;
+  .container3,
+  .container4 {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    z-index: 1;
-    padding: 10px;
     justify-content: space-between;
-    margin-left: 40%;
-    margin-right: 30%;
-  } 
+    margin: 10px;
+  }
   
   .container4 {
     margin-top: 650px;
@@ -55,7 +49,19 @@ body {
     margin-left: 30%;
   }
 
-  
+  /* .container3{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    padding: 10px;
+    justify-content: space-between;
+    margin-left: 40%;
+    margin-right: 30%;
+  } */
 
   .form-group{
     font-size: x-large;
@@ -320,13 +326,15 @@ dialog button:hover {
   padding: 10px;
   background-color: #f1f1f1;
 } 
-
+*/
 #nombre-registrado {
   position: fixed;
   top: 0;
   right: 0;
   padding: 10px;
-  width: 50x;
-  height: 100px;
-  background-color: #f1f1f1;
-}*/
+  width: 20x;
+  height: 10px;
+  color: #000;
+  font-size: large;
+  background-color: #dc91ff;
+}

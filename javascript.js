@@ -34,17 +34,20 @@ function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
 
-function seleccionar(){
-    document.getElementById("formulario").addEventListener("submit", function(event) {
-    event.preventDefault();
-    var nombre = document.getElementById("nombre").value;
-    document.getElementById("nombre").value = ""; // Borra el valor del input
+/*  formulario */
+  document.getElementById("formulario").addEventListener("submit", function(event) {
+  event.preventDefault();
+  var nombre = document.getElementById("nombre").value;
+  document.getElementById("nombre").value = "";
 
-    var nombreDiv = document.createElement("div");
-    nombreDiv.textContent = nombre;
-    document.getElementById("nombre-registrado").appendChild(nombreDiv);
-});
-}
+  // Deshabilita el formulario
+  document.getElementById("nombre").disabled = true;
+  document.querySelector("#formulario button[type='submit']").disabled = true;
+
+  var nombreDiv = document.createElement("div");
+  nombreDiv.textContent = '¡Bienvenidx, '+nombre+'!';
+  document.getElementById("nombre-registrado").appendChild(nombreDiv);        
+}); 
 
 
 
