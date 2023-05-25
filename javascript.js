@@ -49,6 +49,31 @@ function closeModal() {
   document.getElementById("nombre-registrado").appendChild(nombreDiv);        
 }); 
 
+// Obtener el valor de la cookie
+function getCookie(name) {
+  var cookieName = name + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var cookieArray = decodedCookie.split(';');
+
+  for (var i = 0; i < cookieArray.length; i++) {
+      var cookie = cookieArray[i];
+      while (cookie.charAt(0) === ' ') {
+          cookie = cookie.substring(1);
+      }
+      if (cookie.indexOf(cookieName) === 0) {
+          return cookie.substring(cookieName.length, cookie.length);
+      }
+  }
+
+  return "";
+}
+
+// Obtener el nombre registrado de la cookie
+var nombreRegistrado = getCookie("nombreRegistrado");
+
+// Establecer el nombre registrado en el cuadro de texto
+document.getElementById("nombre-registrado").textContent = nombreRegistrado;
+
 
 
 
