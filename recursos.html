@@ -7,6 +7,16 @@
     <title>Recursos</title>
     <link rel="stylesheet" href="indexStyle.css"/>
     
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modoGuardado = localStorage.getItem('modo');
+            if (modoGuardado === 'noche') {
+                document.body.classList.add('modo-noche');
+            }
+        });
+        
+    </script>
+
 </head>
 <body>
   <div id="nombre-registrado"></div>
@@ -52,9 +62,17 @@
         <form id="formulario">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
-            <button type="submit">Registrar</button>
+            <button type="submit" onclick="almacenarEnSessionStorage(),mostrarTextoAlmacenado()">Registrar</button>
+
         </form>
     </div>
+
+    <label>
+        <button onclick="cambiarModo()">
+        cambiar modo a noche/dia
+        <i class="fa-solid fa-moon"></i>
+        </button>
+    </label>
 
     <section id="ajustes">
 
@@ -72,6 +90,19 @@
         <button type="button" onclick="aplicarCambios()">APLICAR</button>
             <!-- <p id="mensaje"></p> -->
     </section>
+
+    <script>
+        cambiarFuente();
+        mostrarTextoAlmacenado();
+        decirHola();
+        
+            function cambiarColor(selectElement) {
+                
+                var color = selectElement.value;
+                document.body.style.color = color;
+            }
+            
+    </script>
 
     <script src="javascript.js"></script>
 
