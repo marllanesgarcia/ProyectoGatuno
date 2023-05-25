@@ -116,15 +116,25 @@
                 </dialog>
             </div>
 
-            <div class="form-group">
-                <form onsubmit="seleccionar()">
-            <li>
-                <label>Dime tu nombre de ususario:</label><br>
-                <input type="text" id="name" placeholder="Usuario..."/><br><br>
-                </li>
-            <input type="button" value="Seleccionar" onclick="seleccionar('name'); return false"> 
-                </form>
-            </div>
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <button type="submit">Registrar</button>
+            </form>
+        
+            <script>
+                document.getElementById("formulario").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    var nombre = document.getElementById("nombre").value;
+                    document.getElementById("nombre").value = ""; 
+        
+                    var nombreDiv = document.createElement("div");
+                    nombreDiv.setAttribute("id", "nombre");
+                    nombreDiv.textContent = nombre;
+                    document.body.appendChild(nombreDiv);
+                });
+            </script>
+
 
             <h1> HOME: </h1>
             <p>
