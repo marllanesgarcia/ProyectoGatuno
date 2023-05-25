@@ -7,6 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colonias de Gatos</title>
     <link rel="stylesheet" href="indexStyle.css" />
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modoGuardado = localStorage.getItem('modo');
+            if (modoGuardado === 'noche') {
+                document.body.classList.add('modo-noche');
+            }
+        });
+        
+    </script>
+
 </head>
 
 <body onload="cargarXML()">
@@ -80,7 +91,12 @@
         </div>
       
       </div>
-    
+      
+      <script>
+        cambiarFuente();
+        mostrarTextoAlmacenado();
+        decirHola();
+    </script>
      <script src="./javascript.js"></script>
 
 </html>

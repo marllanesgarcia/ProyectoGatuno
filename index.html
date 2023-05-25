@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Gatuno</title>
     <link rel="stylesheet" href="indexStyle.css"/>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modoGuardado = localStorage.getItem('modo');
+            if (modoGuardado === 'noche') {
+                document.body.classList.add('modo-noche');
+            }
+        });
+        
+    </script>
 
 </head>
 
@@ -161,6 +171,11 @@
     
         </div>
 
+        <script>
+            cambiarFuente();
+            mostrarTextoAlmacenado();
+            decirHola();
+        </script>
         <script src="./javascript.js"></script>
     </div>
 

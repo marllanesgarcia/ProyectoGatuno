@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
     <link rel="stylesheet" href="indexStyle.css"/>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modoGuardado = localStorage.getItem('modo');
+            if (modoGuardado === 'noche') {
+                document.body.classList.add('modo-noche');
+            }
+        });
+        
+    </script>
+
 </head>
 <body>
     <div id="nombre-registrado"></div>
@@ -99,7 +110,11 @@
           </div>
           <input type="button" value="Enviar" onclick="sendMail(); return false">          
 
-
+          <script>
+            cambiarFuente();
+            mostrarTextoAlmacenado();
+            decirHola();
+        </script>
           <script src="./javascript.js"></script>
 </body>
 </html>
