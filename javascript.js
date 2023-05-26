@@ -142,7 +142,7 @@ function cambiarModo() {
   }
 }
 
-// funcionpara cambiar el color y tamaño de letra
+// funcion para cambiar el color y tamaño de letra
 function aplicarCambios() {
   var colorElegido = document.getElementsByName("colorElegido")[0].value;
   var tamFuente = document.getElementsByName("tamFuente")[0].value;
@@ -156,6 +156,7 @@ function aplicarCambios() {
 // Obtener el elemento de entrada de texto
 const textoInput = document.getElementById('texto-input');
 const textoMostrado = document.getElementById('texto-mostrado');
+
 
 function mostrarTextoAlmacenado() {
   var textoAlmacenado = sessionStorage.getItem('text') || 'sin identificar';
