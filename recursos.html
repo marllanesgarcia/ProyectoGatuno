@@ -74,12 +74,6 @@
         <input type="color" name="colorElegido" />
         <br/>
 
-        <p>Elija la fuente base del documento</p>
-        <select name="tamFuente">
-            <option value="0.8">Pequeña</option>
-            <option value="1.0" selected="selected">Mediana</option>
-            <option value="1.4">Grande</option>
-        </select> </br>
         <button type="button" onclick="aplicarCambios()">APLICAR</button>
             <!-- <p id="mensaje"></p> -->
     </section>
@@ -87,7 +81,6 @@
     <script>
         
         mostrarTextoAlmacenado();
-        cambiarFuente();
             function cambiarColor(selectElement) {
                 
                 var color = selectElement.value;
@@ -95,10 +88,8 @@
             }
             
         var colorElegido = sessionStorage.getItem("colorElegido");
-        var tamFuente = sessionStorage.getItem("tamFuente");
 
         document.body.style.color = colorElegido;
-        document.body.style.fontSize = tamFuente + "em";
 
     </script>
 

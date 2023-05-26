@@ -145,10 +145,7 @@ function cambiarModo() {
 // funcion para cambiar el color y tamaño de letra
 function aplicarCambios() {
   var colorElegido = document.getElementsByName("colorElegido")[0].value;
-  var tamFuente = document.getElementsByName("tamFuente")[0].value;
-
   sessionStorage.setItem("colorElegido", colorElegido);
-  sessionStorage.setItem("tamFuente", tamFuente);
 
   window.location.href = "recursos.html";
 }
@@ -171,9 +168,3 @@ function almacenarEnSessionStorage() {
   alert('Bienvenido '+textoInput);
   
 }
-  function cambiarFuente() {
-  var listValue = document.querySelector('select[name="tamFuente"]').value;
-  document.body.style.fontSize = listValue + "em";
-}
-
-
