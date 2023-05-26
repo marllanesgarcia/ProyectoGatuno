@@ -353,7 +353,7 @@ dialog button:hover {
 
 }
 
-p, h1, h2, h3,dialog {
+p, h1, h2, h3 {
   color:var(--colorNormal);
 }
 
@@ -387,7 +387,7 @@ p, h1, h2, h3,dialog {
   color: #fff;
 }
 
-.modo-noche .modal-content ,.modal {
+.modo-noche .modal-content ,dialog {
   background-color: #111;
   color: #fff;
 }
