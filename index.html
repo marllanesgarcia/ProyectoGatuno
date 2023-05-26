@@ -13,6 +13,7 @@
             const modoGuardado = localStorage.getItem('modo');
             if (modoGuardado === 'noche') {
                 document.body.classList.add('modo-noche');
+                document.getElementById('modal').classList.add('modo-noche');
             }
         });
         
