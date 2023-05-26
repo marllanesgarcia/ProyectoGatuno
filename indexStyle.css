@@ -363,7 +363,7 @@ p, h1, h2, h3 {
   align-self: flex-start;
   align-items: baseline;
   align-content: flex-start;
-  background-color: rgba(150, 109, 216, 0.664);
+  background-color: rgb(150, 109, 216);
   color: #000;
   width: 30vw;
   height: 50vh;
@@ -376,7 +376,7 @@ p, h1, h2, h3 {
 }
 
 #texto-mostrado{
-  background-color: rgba(150, 109, 216, 0.795);
+  background-color: rgb(150, 109, 216);
   font-size: large;
   text-align: center;
 }
