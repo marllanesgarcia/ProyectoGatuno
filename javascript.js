@@ -159,6 +159,9 @@ function mostrarTextoAlmacenado() {
   var textoAlmacenado = sessionStorage.getItem('text') || 'sin identificar';
   var textoMostrado = document.getElementById('texto-mostrado');
   textoMostrado.textContent = '¡Bienvenido, '+textoAlmacenado+'!';
+  if (colorElegido) {
+    cambiarColorElementos(colorElegido);
+  }
  
 }
 
@@ -167,4 +170,17 @@ function almacenarEnSessionStorage() {
   sessionStorage.setItem('text', textoInput);
   alert('Bienvenido '+textoInput);
   
+}
+
+function cambiarColorElementos(color) {
+  var elementosP = document.getElementsByTagName("p");
+  var elementosH1 = document.getElementsByTagName("h1");
+
+  for (var i = 0; i < elementosP.length; i++) {
+    elementosP[i].style.color = color;
+  }
+
+  for (var j = 0; j < elementosH1.length; j++) {
+    elementosH1[j].style.color = color;
+  }
 }
