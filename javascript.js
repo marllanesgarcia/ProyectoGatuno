@@ -144,13 +144,25 @@ function cambiarModo() {
 
 // funcionpara cambiar el color y tamaño de letra
 function aplicarCambios() {
-  var colorElegido = document.getElementsByName("colorElegido")[0].value;
+ /*  var colorElegido = document.getElementsByName("colorElegido")[0].value;
   var tamFuente = document.getElementsByName("tamFuente")[0].value;
 
   sessionStorage.setItem("colorElegido", colorElegido);
   sessionStorage.setItem("tamFuente", tamFuente);
 
-  window.location.href = "recursos.html";
+  window.location.href = "recursos.html"; */
+
+            var color = document.getElementsByName('colorElegido')[0];
+            console.log('color elegido ' + color.value);
+
+            var tam = document.getElementsByName('tamFuente')[0];
+            var tamelegido = tam[tam.selectedIndex].value;
+
+            // aplicamos el color y el tamaño a todo el documento
+            document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
+            document.documentElement.style.setProperty("--colorNormal", color.value);
+            document.getElementById('mensaje').innerHTML = "APLICADO";
+
 }
 
 // Obtener el elemento de entrada de texto
