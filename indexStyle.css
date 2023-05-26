@@ -353,7 +353,7 @@ dialog button:hover {
 
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3,dialog {
   color:var(--colorNormal);
 }
 
