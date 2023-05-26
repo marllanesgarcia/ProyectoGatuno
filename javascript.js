@@ -173,8 +173,9 @@ function almacenarEnSessionStorage() {
   alert('Bienvenido '+textoInput);
   
 }
-function cambiarFuente(){
-  listValue=localStorage.getItem('fuente');
-  document.body.style.fontFamily = listValue;
+  function cambiarFuente() {
+  var listValue = document.querySelector('select[name="tamFuente"]').value;
+  document.body.style.fontSize = listValue + "em";
 }
+
 

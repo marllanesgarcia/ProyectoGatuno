@@ -369,6 +369,7 @@ p, h1, h2, h3 {
   height: 50vh;
   margin-left: 10px;
 }
+
 /* Estilos para el modo noche */
 .modo-noche {
   background-image: url(modonoche.jpg);

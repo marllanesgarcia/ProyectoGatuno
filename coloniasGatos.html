@@ -94,12 +94,13 @@
       </div>
       
       <script>
-        var colorElegido = sessionStorage.getItem("colorElegido");
+       var colorElegido = sessionStorage.getItem("colorElegido");
         var tamFuente = sessionStorage.getItem("tamFuente");
 
         document.body.style.color = colorElegido;
         document.body.style.fontSize = tamFuente + "em";
         mostrarTextoAlmacenado();
+        cambiarFuente();
 
     </script>
 
