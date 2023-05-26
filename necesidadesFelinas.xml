@@ -3,25 +3,23 @@
 <gato xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="necesidadesFelinas.xsd">
 	<titulo>Control Colonias Felinas</titulo>
 	<tema>NECESIDADES CUBIERTAS</tema>
-	<autor>Monica y Mar</autor>
+	<autor>MÓnica y Mar</autor>
 	<main>
 	    <norma>
-			<linea>COLABORACION HUMANA</linea>		
-			<linea>Ayudar a los gatos a tener mejores condiciones de vida</linea>		
+			<linea>COLABORACIÓN HUMANA</linea>		
+			<linea>Ayudar a los gatos a tener mejores condiciones de vida.</linea>		
 		</norma>
 		<norma>
-			<linea>REFUGIO</linea>		
-			 <linea>Proteccion y confort</linea>		
+			<linea>REFUGIO </linea>		
+			 <linea>ProtecciÓn y confort.</linea>		
 		</norma>
 		<norma>
-			<linea>ALIMENTO</linea>	
-			<linea>Diponibles dentro y alrededores de la colonia</linea>
+			<linea>COMIDA</linea>	
+			<linea>Diponibles dentro y alrededores de la colonia felina.</linea>
 		</norma>
 		<norma>
 			<linea>AGUA</linea>		
-			 <linea>Limpia y abundante</linea>		
+			 <linea>Limpia y abundante.</linea>		
 		</norma>
-	   
-		
 	</main>
 </gato>
