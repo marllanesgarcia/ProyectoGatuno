@@ -383,11 +383,11 @@ p, h1, h2, h3 {
 }
 
 
-.modo-noche p, h1, h2, h3,dialog {
+.modo-noche p, h1, h2, h3 {
   color: #fff;
 }
 
-.modo-noche .modal-content ,dialog {
+.modo-noche .modal-content ,.modal,dialog {
   background-color: #111;
   color: #fff;
 }
