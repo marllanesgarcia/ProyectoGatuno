@@ -380,7 +380,7 @@ p, h1, h2, h3 {
 }
 
 
-.modo-noche p, h1, h2, h3 {
+.modo-noche p, #cuadro, h2, h3, h1 {
   color: #fff;
 }
 
