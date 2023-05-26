@@ -7,38 +7,58 @@
         <title>Recursos</title>
         <link rel="stylesheet" href="indexStyle.css"/>
         
-    <style>
-        
-    </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const modoGuardado = localStorage.getItem('modo');
+                if (modoGuardado === 'noche') {
+                    document.body.classList.add('modo-noche');
+                }
+            });
+        </script>
+        <script src="javascript.js"></script>
 </head>
 <body>
+    <div id="texto-mostrado" class="texto-mostrado"></div>
 
-        <div id="nombre-form">
-            <form id="formulario">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <button type="submit">Registrar</button>
-            </form>
-        </div>
-    
-        <div id="nombre-registrado"></div>
+    <section id="ajustes">
 
-        <script>
-        document.getElementById("formulario").addEventListener("submit", function(event) {
-        event.preventDefault();
-        var nombre = document.getElementById("nombre").value;
-        document.getElementById("nombre").value = "";
+        <input type="text" id="texto-input" placeholder="Como te llamas">
+        <button onclick="almacenarEnSessionStorage(),mostrarTextoAlmacenado()">Guardar</button>
+        <!-- <div id="texto-mostrado"></div> -->
 
-        // Deshabilita el formulario
-        document.getElementById("nombre").disabled = true;
-        document.querySelector("#formulario button[type='submit']").disabled = true;
+        <p id="esteParrafo">Elija un Color</p>
+        <input type="color" name="colorElegido" />
+        <br/>
 
-        var nombreDiv = document.createElement("div");
-        nombreDiv.textContent = '¡Bienvenidx, '+nombre+'!';
-        document.getElementById("nombre-registrado").appendChild(nombreDiv);        
-    }); 
+        <p>Elija la fuente base del documento</p>
+        <select name="tamFuente">
+            <option value="0.8" selected="selected">Pequeña</option>
+            <option value="1.0" selected="selected">Mediana</option>
+            <option value="1.4" selected="selected">Grande</option>
+        </select> </br>
+        <button type="button" onclick="aplicarCambios()">APLICAR</button>
+            <!-- <p id="mensaje"></p> -->
+    </section>
 
-        </script>
+    <script>
+        
+        mostrarTextoAlmacenado();
+        cambiarFuente();
+            function cambiarColor(selectElement) {
+                
+                var color = selectElement.value;
+                document.body.style.color = color;
+            }
+            
+        var colorElegido = sessionStorage.getItem("colorElegido");
+        var tamFuente = sessionStorage.getItem("tamFuente");
+
+        document.body.style.color = colorElegido;
+        document.body.style.fontSize = tamFuente + "em";
+
+    </script>
+
+
 </body>
 </html>
 

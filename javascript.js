@@ -155,9 +155,6 @@ function aplicarCambios() {
 
 // Obtener el elemento de entrada de texto
 const textoInput = document.getElementById('texto-input');
-
-
-// Obtener el elemento para mostrar el texto
 const textoMostrado = document.getElementById('texto-mostrado');
 
 function mostrarTextoAlmacenado() {
