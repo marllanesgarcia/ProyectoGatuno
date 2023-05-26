@@ -153,7 +153,7 @@ const textoMostrado = document.getElementById('texto-mostrado');
 function mostrarTextoAlmacenado() {
   var textoAlmacenado = sessionStorage.getItem('text') || 'sin identificar';
   var textoMostrado = document.getElementById('texto-mostrado');
-  textoMostrado.textContent = textoAlmacenado;
+  textoMostrado.textContent = '¡Bienvenido, '+textoAlmacenado+'!';
  
 }
 
