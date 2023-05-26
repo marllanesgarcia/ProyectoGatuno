@@ -169,8 +169,8 @@ function almacenarEnSessionStorage() {
   var textoInput = document.getElementById('texto-input').value;
   sessionStorage.setItem('text', textoInput);
   alert('Bienvenido '+textoInput);
-  
 }
+
   function cambiarFuente() {
   var listValue = document.querySelector('select[name="tamFuente"]').value;
   document.body.style.fontSize = listValue + "em";
