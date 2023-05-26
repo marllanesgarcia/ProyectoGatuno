@@ -142,6 +142,16 @@ function cambiarModo() {
   }
 }
 
+// funcionpara cambiar el color y tamaño de letra
+function aplicarCambios() {
+  var colorElegido = document.getElementsByName("colorElegido")[0].value;
+  var tamFuente = document.getElementsByName("tamFuente")[0].value;
+
+  sessionStorage.setItem("colorElegido", colorElegido);
+  sessionStorage.setItem("tamFuente", tamFuente);
+
+  window.location.href = "recursos.html";
+}
 
 // Obtener el elemento de entrada de texto
 const textoInput = document.getElementById('texto-input');

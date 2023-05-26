@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="indexStyle.css"/>
     
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+             document.addEventListener('DOMContentLoaded', function() {
             const modoGuardado = localStorage.getItem('modo');
             if (modoGuardado === 'noche') {
                 document.body.classList.add('modo-noche');
             }
         });
-        
+      
     </script>
     <script src="./javascript.js"></script>
 </head>
@@ -172,7 +172,12 @@
         </div>
 
         <script>
-            
+             
+         var colorElegido = sessionStorage.getItem("colorElegido");
+        var tamFuente = sessionStorage.getItem("tamFuente");
+
+        document.body.style.color = colorElegido;
+        document.body.style.fontSize = tamFuente + "em"; 
             mostrarTextoAlmacenado();
         </script>
         

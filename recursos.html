@@ -94,6 +94,12 @@
                 document.body.style.color = color;
             }
             
+        var colorElegido = sessionStorage.getItem("colorElegido");
+        var tamFuente = sessionStorage.getItem("tamFuente");
+
+        document.body.style.color = colorElegido;
+        document.body.style.fontSize = tamFuente + "em";
+
     </script>
 
 </body>
