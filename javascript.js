@@ -162,7 +162,8 @@ function mostrarTextoAlmacenado() {
   if (colorElegido) {
     cambiarColorElementos(colorElegido);
   }
- 
+  console.log("Bienvenido al proyecto gatuno");
+
 }
 
 function almacenarEnSessionStorage() {
