@@ -326,14 +326,7 @@ dialog button:hover {
   box-shadow: 8px 8px 0 #321c3b;
 }
 
-/* #nombre-form {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  background-color: #f1f1f1;
-} 
-*/
+
 #nombre-registrado {
   position: fixed;
   top: 0;
